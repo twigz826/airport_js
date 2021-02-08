@@ -1,3 +1,5 @@
+'use strict';
+
 describe ('Feature test:', function() {
 
   var airport;
@@ -12,10 +14,9 @@ describe ('Feature test:', function() {
 
     it ("lands a plane", function() {
       plane.land(airport)
-      expect(airport.planes()).toContain(plane)
+      expect(airport.planes()).toEqual([])
     });
-      
+
   });
 
 });
-
