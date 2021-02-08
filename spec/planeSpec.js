@@ -6,7 +6,7 @@ describe('Plane', function() {
     plane = new Plane();
   });
 
-  it("Can land a plane at an airport", function(){
+  it("can land a plane at an airport", function(){
     expect(plane.land).not.toBeUndefined()
   });
 
